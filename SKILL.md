@@ -1,6 +1,15 @@
 ---
 name: cloudflare-browser-rendering
 description: "Use Cloudflare Browser Rendering REST APIs to extract rendered webpage content as Markdown or crawl whole sites asynchronously. Use when normal web_fetch is insufficient because pages are JavaScript-heavy, require render-time extraction, or you need multi-page site crawling for docs, research, monitoring, or RAG preparation. Prefer this skill for: (1) converting a rendered page to Markdown with /markdown, (2) crawling a documentation site or knowledge base with /crawl, (3) controlling render/load behavior via gotoOptions, cookies, auth, userAgent, or request filtering. Do not use it for interactive login/button-click workflows; use browser for those."
+metadata:
+  {
+    "openclaw":
+      {
+        "requires": { "bins": ["python3"], "env": ["CLOUDFLARE_API_TOKEN", "CLOUDFLARE_ACCOUNT_ID"] },
+        "primaryEnv": "CLOUDFLARE_API_TOKEN",
+        "homepage": "https://github.com/cytwyatt/cloudflare-browser-rendering-skill",
+      },
+  }
 ---
 
 # Cloudflare Browser Rendering
