@@ -96,4 +96,4 @@ python3 scripts/cf_crawl.py run \
 
 ## License
 
-MIT
+MIT-0
