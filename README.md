@@ -31,6 +31,25 @@ This skill sits in the middle:
 - Prepare content for summarization, search, or RAG ingestion
 - Bridge the gap between simple fetch and full browser automation
 
+## Download & installation
+
+### From ClawHub (recommended)
+```bash
+clawhub install cloudflare-browser-rendering
+```
+Or search for "Cloudflare Browser Rendering" in the ClawHub registry.
+
+### From GitHub
+1. Clone or download this repository
+2. Copy the entire `cloudflare-browser-rendering-skill` folder into your OpenClaw workspace `skills/` directory:
+   - `<workspace>/skills/cloudflare-browser-rendering/`
+3. Restart your agent session to load the new skill
+
+Or use a symlink to keep it linked to your local clone:
+```bash
+ln -s /path/to/cloudflare-browser-rendering-skill <workspace>/skills/cloudflare-browser-rendering
+```
+
 ## Requirements
 
 Set these environment variables before running the scripts:
